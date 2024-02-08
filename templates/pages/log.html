@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logs</title>
+    <link rel="shortcut icon" href="../resources/logo.png" type="image/x-icon">
+    <style>
+      .log{
+        margin: 4rem;
+        position: absolute;
+        color: aliceblue;
+      }
+      .short_url{
+        position: relative;
+      }
+      .short_url::before {
+        animation: typing 1s steps(6) forwards;
+      }
+      .short_url::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        background: #242f49;
+        width: 100%;
+        animation: typing 1s steps(6) forwards, blink 500ms infinite;
+      }
+      @keyframes typing {
+        to {
+          width: 0%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/mobile-style.css" />
+    <link rel="stylesheet" href="../static/css/fontawesome/css/all.css" />
+    <script src="../static/js/kute.min.js"></script>
+  </head>
+  <body>
+    <section class="log">
+      {% for entry in log_entries%}
+        <h3 class="short_url">{{ entry }}</h3><br>
+      {% endfor %}
+    </section>
+  </body>
+</html>

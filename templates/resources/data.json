@@ -1,0 +1,12 @@
+{
+    "paragraph": {
+        "1": "Tired of clunky links? ✨ Our free shortener shrinks them into bite-sized, shareable gems. It's like sprinkling magic dust!  Get fancy, clean links that people remember. Shorten, share, shine! ✨ Free forever.",
+        "2": "We craft software to simplify lives, not burden them! 🪄 Our passion lies in web applications, because they offer freedom from downloads and installations. Access our tools directly, anytime, anywhere, on any device. It's convenience with a sprinkle of magic! ✨.",
+        "3":"Want the latest updates, delivered straight to your inbox? ✨ Subscribe to our email program and stay in the loop with essential info & exciting news in one seconds!  Subscribe now! "
+    },
+    "site-map": {
+        "/": "index",
+        "/display": "Get link via website (method[GET,POST]) and render generated short link.",
+        "/all-links": "Show all shorted links"
+    }
+}

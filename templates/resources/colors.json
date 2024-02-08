@@ -1,0 +1,65 @@
+{
+    "gradients": {
+        "Nature-inspired": {
+            "Ocean Breeze": [
+                "#e5f2ff",
+                "#82c0e8",
+                "#4fa0d0"
+            ],
+            "Sunset Glow": [
+                "#f2d598",
+                "#f9aa7a",
+                "#f28452"
+            ],
+            "Forest Whisper": [
+                "#d2e9c4",
+                "#92c69b",
+                "#5a9a6c"
+            ],
+            "Lavender Field": [
+                "#e1d0ed",
+                "#c6aed1",
+                "#9da6b3"
+            ]
+        },
+        "Pastel Palette": {
+            "Soft Blush": [
+                "#ffebee",
+                "#f9d1d6",
+                "#f7b8c3"
+            ],
+            "Serene Sky": [
+                "#e2f1ff",
+                "#c4e0ff",
+                "#a7ccff"
+            ],
+            "Seaglass Dream": [
+                "#e2f2ff",
+                "#d0e6ef",
+                "#c4d7dd"
+            ],
+            "Muted Sun": [
+                "#f9eaed",
+                "#f4d6d9",
+                "#f0c6cc"
+            ]
+        },
+        "Classic Combinations": {
+            "Blue & Purple": [
+                "#4c669f",
+                "#627ba8",
+                "#7d90b3"
+            ],
+            "Pink & Orange": [
+                "#f098ad",
+                "#f9d4a6",
+                "#f2ab7a"
+            ],
+            "Teal & Green": [
+                "#008fa5",
+                "#80c26f",
+                "#a8dd95"
+            ]
+        }
+    }
+}

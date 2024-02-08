@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Link</title>
+    <link rel="shortcut icon" href="../resources/logo.png" type="image/x-icon">
+    <style>
+      .link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20vh;
+        padding: 1em;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          135deg,
+          var(--main-color_1),
+          var(--secondary-color_1)
+        );
+        color: rgb(255, 255, 255);
+        z-index: 10;
+      }
+      .footer {
+        transform: translateY(70vh);
+      }
+      .end-page{
+        transform: translateY(70vh);
+      }
+    </style>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/mobile-style.css" />
+    <link rel="stylesheet" href="../static/css/fontawesome/css/all.css" />
+    <script src="../static/js/kute.min.js"></script>
+  </head>
+  <body>
+    <nav id="nav">
+      <h2><a href="/">NsLink</a></h2>
+      <div class="nav-list">
+        <ul id="nav_ul" class="nav_ul">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#footer">Feedback</a></li>
+          <li>
+            <span class="nav-btn"><a href="">Preview</a></span>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars"></i>
+    </nav>
+    <div class="gototop">
+      <a href="#"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <section class="link">
+      <h3 class="short_url">
+        Your shorten URL is:
+        <strong
+          ><a href="{{ full_url }}" target="_blank">{{ full_url }}</a></strong
+        >
+      </h3>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="row-1">
+        <div class="heading"><h2 class="section-heading">NsLink</h2></div>
+        <div class="style-1"><br /></div>
+      </div>
+      <div class="row-2">
+        <div class="footer-paragraph">
+          <p>
+            <br /><br />
+            We craft software to simplify lives, not burden them! 🪄 Our passion
+            lies in web applications, because they offer freedom from downloads
+            and installations. Access our tools directly, anytime, anywhere, on
+            any device. It's convenience with a sprinkle of magic! ✨.
+          </p>
+        </div>
+        <div class="footer-links">
+          <ul class="links-1">
+            <h3>Links</h3>
+            <br />
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-github"></i
+                ><span class="type-text">Github</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-youtube"></i
+                ><span class="type-text">YouTube</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-linkedin"></i
+                ><span class="type-text">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-brands fa-whatsapp"></i
+                ><span class="type-text">WhatsApp</span></a
+              >
+            </li>
+          </ul>
+          <ul class="links-2">
+            <h3>Links</h3>
+            <br />
+            <li>
+              <a href="callto:+94701370247"
+                ><i class="fa-solid fa-phone"></i
+                ><span class="type-text">+94701370247</span></a
+              >
+            </li>
+            <li>
+              <a href="mailto:nadsoftlk@proton.me"
+                ><i class="fa-solid fa-envelope"></i
+                ><span class="type-text">infok@nadsoft.lk</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-location-dot"></i
+                ><span class="type-text">Nad Tech</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-globe"></i
+                ><span class="type-text">Our Site</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <div class="subscribe-form">
+            <form action="/subscribe" method="post">
+              <input
+                type="email"
+                placeholder="email@mail.com"
+                name="subscribe_mail"
+                required
+              /><button><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+          <div class="subscribe-paragraph">
+            <p>
+              Want the latest updates, delivered straight to your inbox? ✨
+              Subscribe to our email program and stay in the loop with essential
+              info & exciting news in one seconds! Subscribe now
+            </p>
+          </div>
+          <div class="subscribe-credit">© Copyright nad-soft 2024</div>
+        </div>
+      </div>
+    </section>
+    <div class="end-page">All rights reserved | © Copyright nad-soft 2024</div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

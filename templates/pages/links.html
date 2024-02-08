@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <link rel="shortcut icon" href="../resources/logo.png" type="image/x-icon">
+    <style>
+      body {
+        background: #000;
+        overflow-x: hidden;
+        height: 100%;
+      }
+      .link {
+        margin-top: 30vh;
+        color: white;
+        position: absolute;
+        top: 30vh;
+        left: 50%;
+        translate: -50% -50%;
+        div{
+          float: left;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1em;
+          font-size: var(--fs-size);
+          font-family: UbuntuMono-Regular;
+          h3{
+            color: var(--fs-color);
+            grid-column: 1/2;
+          }
+          a{
+            width: 100%;
+            text-decoration: none;
+            color: var(--main-color_1);
+            grid-column: 2/3;
+          }
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/mobile-style.css" />
+    <link rel="stylesheet" href="../static/css/fontawesome/css/all.css" />
+    <script src="../static/js/kute.min.js"></script>
+  </head>
+  <body>
+    <nav id="nav">
+      <h2><a href="/">NsLink</a></h2>
+      <div class="nav-list">
+        <ul id="nav_ul" class="nav_ul">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#footer">Feedback</a></li>
+          <li>
+            <span class="nav-btn"><a href="">Preview</a></span>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars"></i>
+    </nav>
+    <div class="gototop">
+      <a href="#"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <section class="link">
+      <div>
+        {% for link in all_links %}
+            <h3>{{ url_domain + link.short_url }}</h3>
+            <a href="{{ link.long_url }}">{{ link.long_url }}</a>
+        {% endfor %}
+    </div> 
+    </section>
+    
+    
+
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

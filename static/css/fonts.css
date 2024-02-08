@@ -1,0 +1,28 @@
+@font-face{
+    font-family: saraGune;
+    src: url("../assets/fonts/SARA-GUNE.TTF") format("truetype");
+}
+@font-face{
+    font-family: shadowsIntoLight;
+    src: url("../assets/fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: shadowsIntoLight_2;
+    src: url("../assets/fonts/ShadowsIntoLight-light.ttf") format("truetype");
+}
+@font-face{
+    font-family: UbuntuMono-Bold;
+    src: url("../assets/fonts/UbuntuMono-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: UbuntuMono-BoldItalic;
+    src: url("../assets/fonts/UbuntuMono-BoldItalic.ttf") format("truetype");
+}
+@font-face{
+    font-family: UbuntuMono-Italic;
+    src: url("../assets/fonts/UbuntuMono-Italic.ttf") format("truetype");
+}
+@font-face{
+    font-family: UbuntuMono-Regular;
+    src: url("../assets/fonts/UbuntuMono-Regular.ttf") format("truetype");
+}
