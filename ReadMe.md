@@ -13,7 +13,7 @@ This Flask web application allows users to create short links, log their activit
 1. Clone this repository to your local machine:
 
    ```shell
-      git clone <repository_url>
+      git clone https://github.com/Thamidu-Nadun/url_web_app.git
    ```
 Install the required dependencies:
 
