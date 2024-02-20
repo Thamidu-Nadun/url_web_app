@@ -48,5 +48,5 @@ Contributions are welcome! If you have suggestions or find a bug, please open an
 
 ## Quick Demo
 visit to <a href="https://thamidu-nadun.github.io/url_web_app/Demo">Demo Link</a> for a quick demo.
-**MayBe Demo Web Page Will Not Responsive For Your Web Browser Or Some Elements Are Crashed Or Animations Are Crashed, But In Main App Must Work Correctly.**
+**MayBe Demo Web Page Will Not Responsive For Your Web Browser Or Some Elements Are Crashed Or Animations Are Crashed, But In Main App Must Work Correctly.**<br>
 **Feel free to adjust and expand upon this README to fit your specific Flask app's features and requirements.**
