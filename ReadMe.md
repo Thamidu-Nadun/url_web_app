@@ -31,17 +31,17 @@ Open your web browser and navigate to <a>http://localhost:5000</a>.
 
 Use the web interface to create short links, view all links, and access the logs.
 
-File Structure:
-🌳 /
-├── Demo/                📂 Quick demo of web application
-├── logs/                📂 Directory to store log files
-├── static/              📂 Static files (CSS, JavaScript, images)
-├── templates/           📂 HTML templates for the web pages
-└── app.py               📄 Main Flask application file
+File Structure:<br>
+🌳 /<br>
+├── Demo/                📂 Quick demo of web application<br>
+├── logs/                📂 Directory to store log files<br>
+├── static/              📂 Static files (CSS, JavaScript, images)<br>
+├── templates/           📂 HTML templates for the web pages<br>
+└── app.py               📄 Main Flask application file<br>
 
-Dependencies
-├── Flask
-├── pymongo
+Dependencies<br>
+├── Flask<br>
+├── pymongo<br>
 
 ## Contributing
 Contributions are welcome! If you have suggestions or find a bug, please open an issue or submit a pull request.
