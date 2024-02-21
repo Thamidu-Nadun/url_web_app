@@ -27,7 +27,7 @@ Run the Flask app:
 ```shell
    python app.py
 ```
-Open your web browser and navigate to <a>http://localhost:8000</a>.
+Open your web browser and navigate to <a>http://localhost:5000</a>.
 
 Use the web interface to create short links, view all links, and access the logs.
 

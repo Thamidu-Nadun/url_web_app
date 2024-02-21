@@ -1,27 +1,30 @@
 from flask import Flask, render_template, request, redirect
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
 import logging
 import string
 import random
 import time
+import os
 
+from modules import generate_short_url, wait_for_url
 
 app = Flask(__name__,template_folder='templates')
-client = MongoClient('mongodb://localhost:27017/')
+# Load Environment Variables
+load_dotenv()
+# Configure Database
+mongo_url = os.getenv("MONGO_DB_URL")
+client = MongoClient(mongo_url)
 db = client['url_app']
 collection = db['url']
 contacts = db['contacts']
 subscribers = db['subscribers']
+# Configure Logging Format
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',
                     filename='logs/app.log',
                     filemode='w',
                     level=logging.INFO)
-
-def generate_short_url(length=6):
-    chars = string.ascii_letters + string.digits
-    short_url = "".join(random.choice(chars) for _ in range(length))
-    return short_url
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
@@ -33,9 +36,7 @@ def index():
     
     return render_template('index.html')
 
-def wait_for_url():
-    time.sleep(2000)
-    return render_template('index.html')
+
 
 @app.route("/subscribe", methods=['GET', 'POST'])
 def subscribe():
@@ -49,6 +50,8 @@ def redirect_url(short_url):
     short_url_doc = collection.find_one({"short_url": short_url})
     if short_url_doc:
         long_url = short_url_doc["long_url"]
+        # Uncomment this if you want to redirect in page
+        #return render_template('pages/redirect.html',long_url=long_url)
         return redirect(long_url)
     else:
         return render_template('pages/404.html'), 404

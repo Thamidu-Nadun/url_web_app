@@ -25,6 +25,9 @@
         color: rgb(255, 255, 255);
         z-index: 10;
       }
+      .short_url {
+        text-align: center;
+      }
       .footer {
         transform: translateY(70vh);
       }
@@ -59,9 +62,9 @@
 
     <section class="link">
       <h3 class="short_url">
-        Your shorten URL is:
+        You're Redirect To {{ long_url }} in <span id="time_document">5</span> seconds ...
         <strong
-          ><a href="{{ full_url }}" target="_blank">{{ full_url }}</a></strong
+          ><a href="{{ long_url }}" target="_blank">{{ long_url }}</a></strong
         >
       </h3>
     </section>
@@ -164,5 +167,20 @@
     <div class="end-page">All rights reserved | © Copyright nad-soft 2024</div>
 
     <script src="js/main.js"></script>
+    <script>
+      const countdownElement = document.getElementById("time_document");
+      let seconds = 5;
+        function updateCountdown() {
+            countdownElement.textContent = seconds;
+            seconds--;
+            if (seconds < 0) {
+                clearInterval(countdownInterval);
+                window.location.href = '{{ long_url }}';
+            }
+        }
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+  </script>
   </body>
 </html>
